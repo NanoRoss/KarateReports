@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[1.1:16]","start":1690578601331,"end":1690578604722,"title":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[1.1:16] 18:10:01.331-18:10:04.722 Conversion from 'EUR', to 'USD', amount: 100"},{"id":2,"group":1,"content":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[1.2:17]","start":1690578604728,"end":1690578607591,"title":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[1.2:17] 18:10:04.728-18:10:07.591 Conversion from 'EUR', to 'XIS', amount: 100","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[1.3:18]","start":1690578607599,"end":1690578610863,"title":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[1.3:18] 18:10:07.599-18:10:10.863 Conversion from 'TON', to 'EUR', amount: 100"},{"id":4,"group":1,"content":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[1.4:19]","start":1690578610869,"end":1690578614346,"title":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[1.4:19] 18:10:10.869-18:10:14.346 Conversion from 'URI', to 'RUI', amount: 100","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[2.1:31]","start":1690578614353,"end":1690578617645,"title":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[2.1:31] 18:10:14.353-18:10:17.645 Invalid Currency format ISO 4217 from 'eur', to 'USD'","className":"failed"},{"id":6,"group":1,"content":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[2.2:32]","start":1690578617652,"end":1690578620793,"title":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[2.2:32] 18:10:17.652-18:10:20.793 Invalid Currency format ISO 4217 from 'EU', to 'USD'","className":"failed"},{"id":7,"group":1,"content":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[2.3:33]","start":1690578620800,"end":1690578624074,"title":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[2.3:33] 18:10:20.800-18:10:24.074 Invalid Currency format ISO 4217 from 'EUR', to 'usd'","className":"failed"},{"id":8,"group":1,"content":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[3.1:44]","start":1690578624081,"end":1690578627585,"title":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[3.1:44] 18:10:24.081-18:10:27.585 Invalid Amount Test: '-100' status 400","className":"failed"},{"id":9,"group":1,"content":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[3.2:45]","start":1690578627591,"end":1690578630701,"title":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[3.2:45] 18:10:27.591-18:10:30.701 Invalid Amount Test: 'A' status 400"},{"id":10,"group":1,"content":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[3.3:46]","start":1690578630707,"end":1690578634109,"title":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[3.3:46] 18:10:30.707-18:10:34.109 Invalid Amount Test: 'a23' status 400"},{"id":11,"group":1,"content":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[3.4:47]","start":1690578634115,"end":1690578637287,"title":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[3.4:47] 18:10:34.115-18:10:37.287 Invalid Amount Test: '3,5' status 400"},{"id":12,"group":1,"content":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[4.1:59]","start":1690578637293,"end":1690578640441,"title":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[4.1:59] 18:10:37.293-18:10:40.441 Currency Not Found: from 'GEL', to 'EUR'","className":"failed"},{"id":13,"group":1,"content":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[4.2:60]","start":1690578640446,"end":1690578643630,"title":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[4.2:60] 18:10:40.446-18:10:43.630 Currency Not Found: from 'USD', to 'CUC'","className":"failed"},{"id":14,"group":1,"content":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[5.1:72]","start":1690578643636,"end":1690578646807,"title":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[5.1:72] 18:10:43.636-18:10:46.807 Required field Tests for: 'from'","className":"failed"},{"id":15,"group":1,"content":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[5.2:73]","start":1690578646813,"end":1690578650045,"title":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[5.2:73] 18:10:46.813-18:10:50.045 Required field Tests for: 'to'","className":"failed"},{"id":16,"group":1,"content":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[5.3:74]","start":1690578650050,"end":1690578653369,"title":"src\/test\/java\/features\/currencyExchange\/currencyExchangeService[5.3:74] 18:10:50.050-18:10:53.369 Required field Tests for: 'amount'"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
